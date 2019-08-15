@@ -1,0 +1,42 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Novidades</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list inset>
+    <ion-item *ngFor="let user of users">
+      <h2>{{user.name}}</h2>
+      <p>{{user.email}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content> -->
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Novidades</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-card *ngFor="let user of users">
+      <img class="logopri" [src]="user.thumbnailUrl">
+        <!-- <ion-card-subtitle>São Paulo</ion-card-subtitle> -->
+        <br>
+          <ion-title class="tituloprin">{{ user.title }}</ion-title><!-- Acompanhante / Casa Noturna -->
+      <ion-item>
+        <ion-card-content>
+          <!--{{ user.title }}-->
+          <!--<br>
+          {{ user.email }}
+          <br>-->
+          <ion-icon name="heart" style="color:brown"> Amei</ion-icon><br>
+          <ion-icon name="star" style="color:gold"> Favorita</ion-icon>
+          <button ion-button block type="submit" (click)="irmulher()">Conhecer</button> 
+        </ion-card-content>
+      </ion-item>
+  </ion-card>  
+  
+</ion-content>

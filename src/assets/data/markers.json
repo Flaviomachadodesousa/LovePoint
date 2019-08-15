@@ -1,0 +1,26 @@
+[
+   {
+      "latitude":-23.626065,
+      "longitude":-46.695609,
+      "name" : "Flavio 1",
+      "content":"<h4>Casa 1</h4><p> Horario de funcionamento: 16:00 as 06:00 </p><p> Descrição: Casa Boa </p><img src='https://img.olx.com.br/thumbs256x256/88/884901032314936.jpg' width='190' height='190'>"
+    },
+    { 
+      "latitude":-23.626615,
+      "longitude":-46.695287,
+      "name" : "Flavio 2",
+      "content":"<h4>Casa 2</h4><p> Horario de funcionamento: 16:00 as 06:00 </p><p> Descrição: Casa Boa </p><img src='https://img.olx.com.br/thumbs256x256/88/884901032314936.jpg' width='190' height='190'>"
+    },
+    { 
+      "latitude":-23.627362,
+      "longitude":-46.695748,
+      "name" : "Flavio 3",
+      "content":"<h4>Casa 3</h4><p> Horario de funcionamento: 16:00 as 06:00 </p><p> Descrição: Casa Boa </p><img src='https://img.olx.com.br/thumbs256x256/88/884901032314936.jpg' width='190' height='190'>"
+    },
+    {
+      "latitude":-23.627785,
+      "longitude":-46.695319,
+      "name" : "Flavio 4",
+      "content":"<h4>Casa 4</h4><p> Horario de funcionamento: 16:00 as 06:00 </p><p> Descrição: Casa Boa </p><img src='https://img.olx.com.br/thumbs256x256/88/884901032314936.jpg' width='190' height='190'>"
+    }
+  ]

@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Compartilhar o App</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-card>
+      <img class="logopri" src="https://firebasestorage.googleapis.com/v0/b/acompanhantes-59869.appspot.com/o/Aplicativo_objs%2Flogo_pri.png?alt=media&token=f9264866-0cbc-4b86-a0d6-e734b9f7c771">
+        <ion-title class="tituloprin">Acompanhant's App</ion-title>
+      <ion-card-content>
+          Compartilhe agora mesmo o melhor App de Acompanhantes do Brasil.
+  </ion-card-content>
+
+      <ion-item>
+
+        <button ion-button block type="submit" class="whatsapp" (click)="whatsapp()">
+          <ion-icon name="logo-whatsapp" class="iconsleft"></ion-icon>Compartilhar via WhatsApp
+        </button>
+        
+        <button ion-button block type="submit" class="facebook" (click)="facebooksend()">
+          <ion-icon name="logo-facebook" class="iconsleft"></ion-icon>Compartilhar via Facebook
+        </button>
+
+        <button ion-button block type="submit" class="email" (click)="emailsend()">
+          <ion-icon name="mail" class="iconsleft"></ion-icon>Compartilhar via E-mail
+        </button>
+
+      </ion-item>
+  </ion-card>  
+
+</ion-content>
+

@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "Flavio",
+    "address": "Diadema",
+    "Whats": "95156-5156",
+    "fotoPerfil":"https://via.placeholder.com/600/92c952",
+    "fotocar1": "https://via.placeholder.com/600/92c952",
+    "fotocar2": "https://via.placeholder.com/600/92c952",
+    "fotocar3": "https://via.placeholder.com/600/92c952",
+    "fotocar4": "https://via.placeholder.com/600/92c952",
+    "fotocar5": "https://via.placeholder.com/600/92c952",
+    "thumbnailUrl": "https://via.placeholder.com/150/92c952"
+  },
+  {
+    "id": 2,
+    "name": "Flavio Machado",
+    "address": "Morumbi",
+    "Whats": "95156-5156",
+    "fotoPerfil":"https://via.placeholder.com/600/92c952",
+    "fotocar1": "https://via.placeholder.com/600/92c952",
+    "fotocar2": "https://via.placeholder.com/600/92c952",
+    "fotocar3": "https://via.placeholder.com/600/92c952",
+    "fotocar4": "https://via.placeholder.com/600/92c952",
+    "fotocar5": "https://via.placeholder.com/600/92c952",
+    "thumbnailUrl": "https://via.placeholder.com/150/92c952"
+  },
+  {
+    "id": 3,
+    "name": "Machado",
+    "address": "São Bernado do Campo",
+    "Whats": "95156-5156",
+    "fotoPerfil":"https://via.placeholder.com/600/92c952",
+    "fotocar1": "https://via.placeholder.com/600/92c952",
+    "fotocar2": "https://via.placeholder.com/600/92c952",
+    "fotocar3": "https://via.placeholder.com/600/92c952",
+    "fotocar4": "https://via.placeholder.com/600/92c952",
+    "fotocar5": "https://via.placeholder.com/600/92c952",
+    "thumbnailUrl": "https://via.placeholder.com/150/92c952"
+  }
+]

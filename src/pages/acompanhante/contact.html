@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+      <ion-title>
+        Book Rosa
+      </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding> 
+
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="../assets/estados/thumbnail-sp.png">
+      </ion-thumbnail>
+      <h2>São Paulo</h2>
+      <button ion-button clear item-end="submit" (click)="saopaulo()">Exibir</button>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item class="preto">
+       <ion-thumbnail item-start>
+        <img src="../assets/estados/thumbnail-rj.png">
+       </ion-thumbnail>
+       <h2>Rio de Janeiro</h2>
+       <button ion-button clear item-end="submit" (click)="riodejaneiro()">Exibir</button>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+      <ion-item>
+         <ion-thumbnail item-start>
+          <img src="../assets/estados/thumbnail-mg.png">
+         </ion-thumbnail>
+         <h2>Minas Gerais</h2>
+         <button ion-button clear item-end="submit" (click)="minasgerais()">Exibir</button>
+      </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item class="preto">
+      <ion-thumbnail item-start>
+        <img src="../assets/estados/thumbnail-ba.png">
+          </ion-thumbnail>
+          <h2>Bahia</h2>
+        <button ion-button clear item-end="submit" (click)="bahia()">Exibir</button>
+      </ion-item>
+  </ion-list>
+
+  <ion-list>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../assets/estados/thumbnail-rs.png">
+           </ion-thumbnail>
+           <h2>Rio Grande do Sul</h2>
+          <button ion-button clear item-end="submit" (click)="riograndedosul()">Exibir</button>
+      </ion-item>
+  </ion-list>
+
+  <ion-list>
+      <ion-item class="preto">
+          <ion-thumbnail item-start>
+            <img src="../assets/estados/thumbnail-pr.png">
+             </ion-thumbnail>
+          <h2>Paraná</h2>
+          <button ion-button clear item-end="submit" (click)="parana()">Exibir</button>
+      </ion-item>
+  </ion-list>
+
+</ion-content> 
+<!--
+<ion-content padding> 
+  
+    <ion-card *ngFor="let user of users">
+        <img class="logopri" [src]="user.thumbnailUrl"> -->
+          <!-- <ion-card-subtitle>São Paulo</ion-card-subtitle> -->
+          <!--
+          <br>
+            <ion-title class="tituloprin">{{ user.name }}</ion-title>--><!-- Acompanhante / Casa Noturna -->
+        <!--<ion-item>
+          <ion-card-content>
+            {{ user.Whats }} -->
+            <!--<br>
+            {{ user.email }}
+            <br>-->
+            <!--
+          </ion-card-content>
+        </ion-item>
+        <button ion-button block type="submit" class="irmulher" (click)="irmulher()">Acessar</button>
+    </ion-card>  
+  </ion-content> 
+-->

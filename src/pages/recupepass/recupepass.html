@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Recuperação de senha</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+    <h3>Informe seu E-mail</h3>
+    <h6>Logo em seguida será enviado um e-mail para cadastrar a nova senha.</h6>
+    <form (ngSubmit)="sendemailreset()" #formulario="ngForm">
+        <ion-item>
+          <ion-label stacked>Seu E-mail:</ion-label>
+          <ion-input [(ngModel)]="email" name="email"></ion-input>
+        </ion-item>
+        <button ion-button block type="submit" class="sendemailreset">RECUPERAR SENHA</button>
+      </form>
+  </ion-content>

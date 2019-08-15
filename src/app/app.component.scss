@@ -1,0 +1,41 @@
+Acompanhants {
+    #cabecalho-menu .item-inner {
+        border: none;
+    }
+    .cabecalho-menu {
+        background-image: url('../assets/img/material-design-background.jpg');
+        height: 150px;
+        margin-bottom: 10px;
+        ion-avatar img {
+            width: 50px;
+            height: 50px;
+        }
+        h2 {
+            color: white;
+            font-weight: bold;
+        }
+        p {
+            color: #eee;
+        }
+    }// Cor Icons menu Estrela
+    .ion-md-star{
+        color: goldenrod !important;
+    }
+    .ion-ios-star{
+        color: goldenrod !important;
+    }
+    // Cor Icons menu Compartilhar
+    .ion-md-share{
+        color: green !important;
+    }
+    .ion-ios-share{
+        color: green !important;
+    }
+    // Cor Icons menu Interrogação
+    .ion-md-help-circle{
+        color: black !important;
+    }
+    .ion-ios-help-circle{
+        color: black !important;
+    }
+}

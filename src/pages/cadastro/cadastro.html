@@ -1,0 +1,60 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Cadastre-se</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+    
+  <ion-content padding>
+    
+    <form (ngSubmit)="cadastrar()" #formulario="ngForm">
+        <ion-item>
+          <ion-label stacked>* Nome:</ion-label>
+          <ion-input [(ngModel)]="nome" name="nome"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>* E-mail:</ion-label>
+          <ion-input [(ngModel)]="email" name="email"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label stacked>* CPF:</ion-label>
+          <ion-input [(ngModel)]="CPF" name="CPF"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label stacked>* Data de Nascimento:</ion-label>
+          <ion-datetime [(ngModel)]="data" name="data" displayFormat="DD/MM/YY"></ion-datetime>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label stacked>* Celular:</ion-label>
+          <ion-input [(ngModel)]="telefone" name="telefone"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label stacked>* Senha</ion-label>
+          <ion-input [(ngModel)]="senha" name="senha" type="password" placeholder="Senha"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked type="password" placeholder="Password">* Confirmar Senha:</ion-label>
+          <ion-input [(ngModel)]="confsenha" name="confsenha" type="password" placeholder="Senha"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>
+            <h6>Concordo com os termos</h6>
+          </ion-label>
+          <ion-checkbox color="primary"></ion-checkbox>
+        </ion-item>
+        
+        <div>
+          <br/>
+        </div>
+        
+      </form>
+      <button ion-button block type="submit" class="cadastro" (click)="formulario.ngSubmit.emit()">CADASTRAR</button>
+  </ion-content>

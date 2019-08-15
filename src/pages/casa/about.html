@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+        Casas Noturnas
+    </ion-title>
+        
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    <div><button ion-button block type="submit" class="obtlocal" (click)="obtlocal()">Localização</button></div>
+    <div #map id="map" style="height:100%;width:100%"></div>
+  </ion-content>
