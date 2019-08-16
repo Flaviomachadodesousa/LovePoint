@@ -36,10 +36,11 @@ export class AcompanhantesaopauloPage {
                 this.users = data;
                 console.log(this.users);
               });
+             }
+
+        irbook(AUSER){
+          console.log(AUSER.id)
+
         }
 
-        irbook(){
-          console.log('funcionando')
-        }
-
-    }
+      }
