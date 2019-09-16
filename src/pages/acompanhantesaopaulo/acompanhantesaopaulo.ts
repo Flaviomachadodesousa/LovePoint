@@ -1,3 +1,4 @@
+import { MostraracompanhantePage } from './../mostraracompanhante/mostraracompanhante';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
@@ -40,7 +41,7 @@ export class AcompanhantesaopauloPage {
 
         irbook(AUSER){
           console.log(AUSER.id)
-
+          this.navCtrl.push(MostraracompanhantePage)
         }
 
       }
