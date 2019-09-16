@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-card *ngFor="let AUSER of AUSER">
+      <img class="logopri" [src]="AUSER.thumbnailUrl">
+        <!-- <ion-card-subtitle>São Paulo</ion-card-subtitle> -->
+        <br>
+          <ion-title class="tituloprin">{{ AUSER.title }}</ion-title><!-- Acompanhante / Casa Noturna -->
+      <ion-item>
+        <ion-card-content>
+          <!--{{ user.title }}-->
+          <!--<br>
+          {{ user.email }}
+          <br>-->
+          
+          <ion-icon name="heart" class="esquerda" style="color:brown"> Amei</ion-icon>
+          <br>
+          <br>
+          <ion-icon name="star" class="direita"> Favoritar</ion-icon>
+          <br>
+          <br>
+          
+        </ion-card-content>
+      </ion-item>
+  </ion-card>  
+  
+</ion-content>
