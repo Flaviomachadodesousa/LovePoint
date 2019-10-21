@@ -38,7 +38,7 @@ export class AcompanhantesaopauloPage {
                 console.log(this.users);
               });
              }
-
+             
         irbook(AUSER){
           console.log(AUSER.id)
           this.navCtrl.push(MostraracompanhantePage)
