@@ -14,8 +14,7 @@ export class RecupepassPage {
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public afAuth: AngularFireAuth,
     private _alertCtrl: AlertController,
-    ) {
-  }
+    ) {}
 
   sendemailreset(){
     this.afAuth.auth.sendPasswordResetEmail(this.email)
@@ -35,6 +34,5 @@ export class RecupepassPage {
               ]
     }).present()
     )
-
   }
 }
