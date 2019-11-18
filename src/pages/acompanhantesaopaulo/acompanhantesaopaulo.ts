@@ -1,6 +1,6 @@
 import { MostraracompanhantePage } from './../mostraracompanhante/mostraracompanhante';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController, Thumbnail } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import { AcompanhantesProvider } from '../../providers/acompanhantes/acompanhantes';
 
@@ -38,10 +38,14 @@ export class AcompanhantesaopauloPage {
                 console.log(this.users);
               });
              }
-             
-        irbook(AUSER){
-          console.log(AUSER.id)
-          this.navCtrl.push(MostraracompanhantePage)
-        }
 
-      }
+             detalhes(AUSER){
+               this.navCtrl.push(MostraracompanhantePage, {
+                id : AUSER.id ,
+                title : AUSER.title,
+                thumbnailUrl : AUSER.thumbnailUrl
+                //console.log('USER ID É INGUAL A ='+AUSER.thumbnailUrl)
+                //console.log('USER ID É INGUAL A ='+AUSER.title)
+              });
+            }
+}
