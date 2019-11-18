@@ -51,6 +51,11 @@ import { AcompanhantebahiaPage } from '../pages/acompanhantebahia/acompanhanteba
 import { AcompanhanteriograndedosulPage } from '../pages/acompanhanteriograndedosul/acompanhanteriograndedosul';
 import { AcompanhanteparanaPage } from '../pages/acompanhanteparana/acompanhanteparana';
 
+//MOSTRAR
+import { MostraracompanhantePage } from '../pages/mostraracompanhante/mostraracompanhante';
+
+
+
 const config_firebase = {
   apiKey: "AIzaSyBVp0sGCKAFVY_Wyb2RaCowJVHnTqeqMxw",
   authDomain: "acompanhantes-59869.firebaseapp.com",
@@ -80,7 +85,8 @@ const config_firebase = {
     AcompanhanteminasgeraisPage,
     AcompanhantebahiaPage,
     AcompanhanteriograndedosulPage,
-    AcompanhanteparanaPage
+    AcompanhanteparanaPage,
+    MostraracompanhantePage
   ],
   imports: [
     BrowserModule,
@@ -109,7 +115,8 @@ const config_firebase = {
     AcompanhanteminasgeraisPage,
     AcompanhantebahiaPage,
     AcompanhanteriograndedosulPage,
-    AcompanhanteparanaPage
+    AcompanhanteparanaPage,
+    MostraracompanhantePage
   ],
   providers: [
     StatusBar,
