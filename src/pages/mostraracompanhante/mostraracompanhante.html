@@ -5,28 +5,17 @@
 </ion-header>
 
 <ion-content padding>
-  
-  <ion-card *ngFor="let AUSER of AUSER">
-      <img class="logopri" [src]="AUSER.thumbnailUrl">
-        <!-- <ion-card-subtitle>São Paulo</ion-card-subtitle> -->
+  <h1>teste tem que aparecer</h1>
+  <ion-card >
+      <img class="logopri" [src]="thumbnailUrl">
         <br>
-          <ion-title class="tituloprin">{{ AUSER.title }}</ion-title><!-- Acompanhante / Casa Noturna -->
+        
+          <ion-title class="tituloprin">{{id}}</ion-title>
       <ion-item>
         <ion-card-content>
-          <!--{{ user.title }}-->
-          <!--<br>
-          {{ user.email }}
-          <br>-->
-          
-          <ion-icon name="heart" class="esquerda" style="color:brown"> Amei</ion-icon>
-          <br>
-          <br>
-          <ion-icon name="star" class="direita"> Favoritar</ion-icon>
-          <br>
-          <br>
-          
+          {{title}}
         </ion-card-content>
       </ion-item>
-  </ion-card>  
+  </ion-card> 
   
 </ion-content>
