@@ -19,23 +19,18 @@ export class MostraracompanhantePage {
   
   public users: any;
   loading: any;
+  id: any;
+  title: any;
+  thumbnailUrl: any;
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
-              public http: HttpClient,public Acompanhantes: AcompanhantesProvider) {
-  }
+              public http: HttpClient,
+              public Acompanhantes: AcompanhantesProvider) {
 
-  getsaopaulo() {
-    this.Acompanhantes.getsaopaulo()
-    .then(data => {
-      this.users = data;
-      console.log(this.users);
-    });
-   }
-
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MostraracompanhantePage');
-  }
-
+              this.id = navParams.get('id');
+              this.title = navParams.get('title');
+              this.thumbnailUrl = navParams.get('thumbnailUrl');
+              }
+              
 }
