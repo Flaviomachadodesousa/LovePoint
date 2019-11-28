@@ -1,17 +1,25 @@
-<ion-header>
+<ion-header id=content>
   <ion-navbar>
     <ion-title></ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h1>teste tem que aparecer</h1>
-  <ion-card >
-      <img class="logopri" [src]="thumbnailUrl">
+<ion-content padding id=content>
+  
+  <ion-card id=content>
+      
+    <ion-toolbar>
+          <ion-title>Nome: {{ nome }}</ion-title>
+          <br>
+          <ion-title>Local: {{ local }}</ion-title>
+          <br>
+          <ion-title>Whatsapp: {{ local }}</ion-title>
+      </ion-toolbar>
+
+      <img [src]="thumbnailUrl">
         <br>
-        
-          <ion-title class="tituloprin">{{id}}</ion-title>
-      <ion-item>
+          <ion-title>{{id}}</ion-title>
+      <ion-item id=content>
         <ion-card-content>
           {{title}}
         </ion-card-content>
