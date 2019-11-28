@@ -1,6 +1,6 @@
 import { MostraracompanhantePage } from './../mostraracompanhante/mostraracompanhante';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController, Thumbnail } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import { AcompanhantesProvider } from '../../providers/acompanhantes/acompanhantes';
 
