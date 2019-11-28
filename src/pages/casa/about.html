@@ -11,6 +11,13 @@
   </ion-header>
   
   <ion-content>
-    <div><button ion-button block type="submit" class="obtlocal" (click)="obtlocal()">Localização</button></div>
+    <!-- <div>
+      <button ion-button block type="submit" class="obtlocal" (click)="obtlocal()">Localização</button>
+    </div> -->
+    <ion-fab right bottom>
+      <button ion-fab type="submit" (click)="obtlocal()">
+        <ion-icon name="locate"></ion-icon>
+      </button>
+    </ion-fab>
     <div #map id="map" style="height:100%;width:100%"></div>
   </ion-content>
