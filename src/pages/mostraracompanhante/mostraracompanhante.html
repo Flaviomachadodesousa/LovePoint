@@ -1,29 +1,167 @@
-<ion-header id=content>
+<ion-header>
   <ion-navbar>
     <ion-title></ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding id=content>
+<ion-content fullscreen>
   
-  <ion-card id=content>
-      
-    <ion-toolbar>
+    <ion-toolbar id="tool">
           <ion-title>Nome: {{ nome }}</ion-title>
           <br>
           <ion-title>Local: {{ local }}</ion-title>
           <br>
-          <ion-title>Whatsapp: {{ local }}</ion-title>
+          <ion-title>Whatsapp: {{ whats }}</ion-title>
       </ion-toolbar>
 
-      <img [src]="thumbnailUrl">
-        <br>
-          <ion-title>{{id}}</ion-title>
+    <ion-slides id="slide">
+
+      <ion-slide>
+        <img src="../assets/img/appicon.png" class="imagem">
+      </ion-slide>
+
+      <ion-slide>
+        <img src="../assets/img/appicon.png" class="imagem">
+      </ion-slide>
+      
+    </ion-slides>
+
+    <ion-grid id="tabela">
+    
+        <ion-row>
+          <ion-col>
+            <div>
+              Idade:
+            </div>
+          </ion-col>
+
+          <ion-col>
+            <div>
+            {{id}}
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+              <div>
+                Altura:
+              </div>
+            </ion-col>
+  
+            <ion-col>
+              <div>
+                  {{id}}
+              </div>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+              <ion-col>
+                <div>
+                  Peso:
+                </div>
+              </ion-col>
+    
+              <ion-col>
+                <div>
+                    {{id}}
+                </div>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+                  <div>
+                    Manequim:
+                  </div>
+                </ion-col>
+      
+                <ion-col>
+                  <div>
+                      {{id}}
+                  </div>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col>
+                    <div>
+                      Pés:
+                    </div>
+                  </ion-col>
+        
+                  <ion-col>
+                    <div>
+                        {{id}}
+                    </div>
+                  </ion-col>
+                </ion-row>
+
+                 <ion-row>
+                <ion-col>
+                  <div>
+                    Acompanha:
+                  </div>
+                </ion-col>
+      
+                <ion-col>
+                  <div>
+                      {{id}}
+                  </div>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col>
+                    <div>
+                      Atende em:
+                    </div>
+                  </ion-col>
+        
+                  <ion-col>
+                    <div>
+                        {{id}}
+                    </div>
+                  </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col>
+                      <div>
+                        Whatsapp:
+                      </div>
+                    </ion-col>
+          
+                    <ion-col>
+                      <div>
+                          {{id}}
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row>
+                      <ion-col>
+                        <div>
+                          Horário:
+                        </div>
+                      </ion-col>
+            
+                      <ion-col>
+                        <div>
+                            {{id}}
+                        </div>
+                      </ion-col>
+                    </ion-row>
+
+      </ion-grid>
+      <br>
+
+    <ion-title>{{id}}</ion-title>
       <ion-item id=content>
         <ion-card-content>
           {{title}}
         </ion-card-content>
       </ion-item>
-  </ion-card> 
   
 </ion-content>
