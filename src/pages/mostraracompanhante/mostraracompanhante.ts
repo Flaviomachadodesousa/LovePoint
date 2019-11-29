@@ -16,13 +16,19 @@ import { AcompanhantesProvider } from '../../providers/acompanhantes/acompanhant
   templateUrl: 'mostraracompanhante.html',
 })
 export class MostraracompanhantePage {
-  
+
+  options: any;
   public users: any;
   loading: any;
   id: any;
   title: any;
   thumbnailUrl: any;
 
+  slideOpts = {
+    initialSlide: 1,
+    speed: 400
+  };
+  
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public http: HttpClient,
@@ -31,6 +37,9 @@ export class MostraracompanhantePage {
               this.id = navParams.get('id');
               this.title = navParams.get('title');
               this.thumbnailUrl = navParams.get('thumbnailUrl');
-              }
+             
+            }
+
+             
               
 }
