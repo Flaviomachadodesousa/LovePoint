@@ -6,28 +6,45 @@
 
 <ion-content fullscreen>
   
-    <ion-toolbar id="tool">
-          <ion-title>Nome: {{ nome }}</ion-title>
+    <ion-toolbar class="tool">
+          <ion-title>Nome: Mia Khalifa</ion-title>
           <br>
-          <ion-title>Local: {{ local }}</ion-title>
+          <ion-title>Local: EUA</ion-title>
           <br>
-          <ion-title>Whatsapp: {{ whats }}</ion-title>
+          <ion-title>Whatsapp: 11554449988</ion-title>
       </ion-toolbar>
 
     <ion-slides id="slide">
 
       <ion-slide>
-        <img src="../assets/img/appicon.png" class="imagem">
+        <img src="../assets/img/appicon.png" id="slide">
       </ion-slide>
 
       <ion-slide>
-        <img src="../assets/img/appicon.png" class="imagem">
+        <img src="../assets/img/appicon.png" id="slide">
       </ion-slide>
       
     </ion-slides>
 
+<!--  Descrição   -->
+
+<ion-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQsVFjqaoIO6HQeVb9cmH7iUWWW4lN5uubm-3ukF68w496J_GlF" id="imagem_descricao"></ion-img>
+
+<div id="descri">
+  <h2>Mia Khalifa - 11 98116-9936</h2>
+
+</div>
+
+  <p id="descrever">
+    I saw a werewolf with a Chinese menu in his hand.
+    Walking through the streetsf Soho in the rain.
+    He  looking for a place called Lee Ho Fook's.
+    Gonna get a big dish of beef chow mein.
+  </p>
+
+<!--  Tabela de informações   -->
     <ion-grid id="tabela">
-    
+<!--  idade   -->
         <ion-row>
           <ion-col>
             <div>
@@ -41,7 +58,7 @@
             </div>
           </ion-col>
         </ion-row>
-
+<!--  Altura   -->
         <ion-row>
             <ion-col>
               <div>
@@ -55,7 +72,7 @@
               </div>
             </ion-col>
           </ion-row>
-
+<!--  Peso   -->
           <ion-row>
               <ion-col>
                 <div>
@@ -69,8 +86,22 @@
                 </div>
               </ion-col>
             </ion-row>
-
+<!--  Pes   -->
             <ion-row>
+              <ion-col>
+                <div>
+                  Pés:
+                </div>
+              </ion-col>
+
+              <ion-col>
+                <div>
+                    {{id}}
+                </div>
+              </ion-col>
+            </ion-row>
+<!--  Manequim   -->
+              <ion-row>
                 <ion-col>
                   <div>
                     Manequim:
@@ -83,22 +114,8 @@
                   </div>
                 </ion-col>
               </ion-row>
-
+<!--  Acompanha   -->
               <ion-row>
-                  <ion-col>
-                    <div>
-                      Pés:
-                    </div>
-                  </ion-col>
-        
-                  <ion-col>
-                    <div>
-                        {{id}}
-                    </div>
-                  </ion-col>
-                </ion-row>
-
-                 <ion-row>
                 <ion-col>
                   <div>
                     Acompanha:
@@ -111,7 +128,7 @@
                   </div>
                 </ion-col>
               </ion-row>
-
+<!--  Atende local   -->
               <ion-row>
                   <ion-col>
                     <div>
@@ -125,7 +142,7 @@
                     </div>
                   </ion-col>
                 </ion-row>
-
+<!--  Whatsapp   -->
                 <ion-row>
                     <ion-col>
                       <div>
@@ -139,7 +156,7 @@
                       </div>
                     </ion-col>
                   </ion-row>
-
+<!--  Horario Fun   -->
                   <ion-row>
                       <ion-col>
                         <div>
@@ -156,12 +173,12 @@
 
       </ion-grid>
       <br>
-
+    <!--
     <ion-title>{{id}}</ion-title>
       <ion-item id=content>
         <ion-card-content>
           {{title}}
         </ion-card-content>
       </ion-item>
-  
+  -->
 </ion-content>
