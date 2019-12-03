@@ -1,7 +1,11 @@
 page-mostraracompanhante {
+    #content{
+        background-color: #2e2e2e
+    }
     #slide{
         padding-top:0%;
         width: 100%;
+        
     }
     .tool{
         margin-top: 5%;
@@ -9,8 +13,10 @@ page-mostraracompanhante {
     }
     #tabela{
         text-align: left;
-        padding-left: 15%;
+        padding-left: 5%;
         padding-right: 0%;
+        color: white;
+        font-size: 18px;
     }
     #imagem_descricao{
         margin-right: auto;
@@ -21,14 +27,28 @@ page-mostraracompanhante {
     #descri{
         margin-left: 5%;
         text-align: left;
+        color: white
     }
     #descrever{
-        font-size: 22px;
+        font-size: 18px;
         text-align: left;
-        margin-left: 5%;
+        padding-right: 5%;
+        padding-left: 5%;
+        color: white
     }
     .toolbar-background {
         background-color: white;
+    }
+    #name{
+        font-size: 22px;
+        color: white;
+    }
+    h1{
+        color: white;
+        font-size: 24px;
+    }
+    .div {
+        display:none;
     }
 
 }
