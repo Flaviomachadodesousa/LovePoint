@@ -31,6 +31,7 @@ import { UserDataConfigProvider } from '../providers/userdata-config/userdata-co
 import { Camera } from '@ionic-native/camera/ngx';
 import { Firebase } from '@ionic-native/firebase/ngx';
 
+
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { CompartilharPage } from '../pages/compartilhar/compartilhar';
@@ -86,14 +87,16 @@ const config_firebase = {
     AcompanhantebahiaPage,
     AcompanhanteriograndedosulPage,
     AcompanhanteparanaPage,
-    MostraracompanhantePage
+    MostraracompanhantePage,
+
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(Acompanhants),
     AngularFireModule.initializeApp(config_firebase),
     AngularFireAuthModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -116,7 +119,8 @@ const config_firebase = {
     AcompanhantebahiaPage,
     AcompanhanteriograndedosulPage,
     AcompanhanteparanaPage,
-    MostraracompanhantePage
+    MostraracompanhantePage,
+
   ],
   providers: [
     StatusBar,
@@ -134,7 +138,8 @@ const config_firebase = {
     Novidadesservice,
     HttpClientModule,
     Geolocation,
-    AcompanhantesProvider
+    AcompanhantesProvider,
+
   ]
 })
 export class AppModule {}
