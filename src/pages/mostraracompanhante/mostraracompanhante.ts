@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import { AcompanhantesProvider } from '../../providers/acompanhantes/acompanhantes';
 
+
 /**
  * Generated class for the MostraracompanhantePage page.
  *
@@ -20,9 +21,22 @@ export class MostraracompanhantePage {
   options: any;
   public users: any;
   loading: any;
-  id: any;
-  title: any;
-  thumbnailUrl: any;
+
+  Id :any;
+  Nome : any;
+  Local_Atende : any;
+  Whatsapp : any;
+  Thumbnail_Inicial: any;
+  Thumbnail_Descricao: any;
+  Idade: any;
+  Altura: any;
+  Peso: any;
+  Pes: any;
+  Manequim: any;
+  Acompanha: any;
+  Atende: any;
+  Horario: any;
+  Descricao: any;
 
   slideOpts = {
     initialSlide: 1,
@@ -34,9 +48,21 @@ export class MostraracompanhantePage {
               public http: HttpClient,
               public Acompanhantes: AcompanhantesProvider) {
 
-              this.id = navParams.get('id');
-              this.title = navParams.get('title');
-              this.thumbnailUrl = navParams.get('thumbnailUrl');
+              this.Id = navParams.get('Id');
+              this.Nome = navParams.get('Nome');
+              this.Local_Atende = navParams.get('Local_Atende');
+              this.Whatsapp = navParams.get('Whatsapp');
+              this.Thumbnail_Inicial = navParams.get('Thumbnail_Inicial');
+              this.Thumbnail_Descricao = navParams.get('Thumbnail_Descricao');
+              this.Idade = navParams.get('Idade');
+              this.Altura = navParams.get('Altura');
+              this.Peso = navParams.get('Peso');
+              this.Pes = navParams.get('Pes');
+              this.Manequim = navParams.get('Manequim');
+              this.Acompanha = navParams.get('Acompanha');
+              this.Atende = navParams.get('Atende');
+              this.Horario = navParams.get('Horario');
+              this.Descricao = navParams.get('Descricao');
              
             }
 
