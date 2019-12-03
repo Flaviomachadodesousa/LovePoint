@@ -7,10 +7,10 @@
 <ion-content fullscreen>
   
   <ion-card *ngFor="let user of users">
-      <img class="logopri" [src]="user.thumbnailUrl">
+      <img class="logopri" [src]="user.Thumbnail_Inicial">
         <!-- <ion-card-subtitle>São Paulo</ion-card-subtitle> -->
         <br>
-          <ion-title class="tituloprin">{{ user.title }}</ion-title><!-- Acompanhante / Casa Noturna -->
+          <ion-title class="tituloprin">{{ user.Nome }}</ion-title><!-- Acompanhante / Casa Noturna -->
       <ion-item>
         <ion-card-content>
           <!--{{ user.title }}-->
