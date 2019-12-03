@@ -41,9 +41,21 @@ export class AcompanhantesaopauloPage {
 
              detalhes(AUSER){
                this.navCtrl.push(MostraracompanhantePage, {
-                id : AUSER.id ,
-                title : AUSER.title,
-                thumbnailUrl : AUSER.thumbnailUrl
+                Id : AUSER.Id ,
+                Nome : AUSER.Nome,
+                Local_Atende : AUSER.Local_Atende,
+                Whatsapp : AUSER.Whatsapp,
+                Thumbnail_Inicial: AUSER.Thumbnail_Inicial,
+                Thumbnail_Descricao: AUSER.Thumbnail_Descricao,
+                Idade: AUSER.Idade,
+                Altura: AUSER.Altura,
+                Peso: AUSER.Peso,
+                Pes: AUSER.Pes,
+                Manequim: AUSER.Manequim,
+                Acompanha: AUSER.Acompanha,
+                Atende: AUSER.Atende,
+                Horario: AUSER.Horario,
+                Descricao: AUSER.Descricao,
                 //console.log('USER ID É INGUAL A ='+AUSER.thumbnailUrl)
                 //console.log('USER ID É INGUAL A ='+AUSER.title)
               });
