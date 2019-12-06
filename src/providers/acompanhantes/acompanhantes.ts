@@ -8,7 +8,7 @@ export class AcompanhantesProvider {
   public items: any;
   url = "https://jsonplaceholder.typicode.com/photos";
   urlflavio = "https://api.myjson.com/bins/10qu78";
-  urlsp = "https://api.myjson.com/bins/1f989w";
+  urlsp = "https://api.myjson.com/bins/b0jko";
 
   constructor(public http: HttpClient) {
     }
