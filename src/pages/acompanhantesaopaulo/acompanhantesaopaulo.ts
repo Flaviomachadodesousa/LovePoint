@@ -56,6 +56,16 @@ export class AcompanhantesaopauloPage {
                 Atende: AUSER.Atende,
                 Horario: AUSER.Horario,
                 Descricao: AUSER.Descricao,
+                Pergunta1: AUSER.Pergunta1,
+                Pergunta2: AUSER.Pergunta2,
+                Pergunta3: AUSER.Pergunta3,
+                Pergunta4: AUSER.Pergunta4,
+                Pergunta5: AUSER.Pergunta5,
+                Resposta1: AUSER.Resposta1,
+                Resposta2: AUSER.Resposta2,
+                Resposta3: AUSER.Resposta3,
+                Resposta4: AUSER.Resposta4,
+                Resposta5: AUSER.Resposta5,
                 //console.log('USER ID É INGUAL A ='+AUSER.thumbnailUrl)
                 //console.log('USER ID É INGUAL A ='+AUSER.title)
               });
