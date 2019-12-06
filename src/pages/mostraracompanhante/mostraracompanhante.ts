@@ -37,6 +37,16 @@ export class MostraracompanhantePage {
   Atende: any;
   Horario: any;
   Descricao: any;
+  Pergunta1: any;
+  Pergunta2: any;
+  Pergunta3: any;
+  Pergunta4: any;
+  Pergunta5: any;
+  Resposta1: any;
+  Resposta2: any;
+  Resposta3: any;
+  Resposta4: any;
+  Resposta5: any;
 
   slideOpts = {
     initialSlide: 1,
@@ -63,7 +73,16 @@ export class MostraracompanhantePage {
               this.Atende = navParams.get('Atende');
               this.Horario = navParams.get('Horario');
               this.Descricao = navParams.get('Descricao');
-             
+              this.Pergunta1 = navParams.get('Pergunta1');
+              this.Pergunta2 = navParams.get('Pergunta2');
+              this.Pergunta3 = navParams.get('Pergunta2');
+              this.Pergunta4 = navParams.get('Pergunta4');
+              this.Pergunta5 = navParams.get('Pergunta5');
+              this.Resposta1 = navParams.get('Resposta1');
+              this.Resposta2 = navParams.get('Resposta2');
+              this.Resposta3 = navParams.get('Resposta3');
+              this.Resposta4 = navParams.get('Resposta4');
+              this.Resposta5 = navParams.get('Resposta5');
             }
 
              
