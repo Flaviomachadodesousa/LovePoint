@@ -6,7 +6,6 @@
 
 <ion-content fullscreen id="content">
   
-
     <h1 id="name">Nome: {{Nome}}</h1>
     <h1>Local: {{Local_Atende}}</h1>
     <h1>Whatsapp: {{Whatsapp}}</h1>
@@ -24,24 +23,31 @@
         
       </ion-slides>
   </div>
-<!--  Descrição   -->
 
-<ion-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQsVFjqaoIO6HQeVb9cmH7iUWWW4lN5uubm-3ukF68w496J_GlF" id="imagem_descricao"></ion-img>
+<!--  Descrição   -->
+<h3>Descrição</h3>
+
+<ion-img src="{{ Thumbnail_Descricao }}" id="imagem_descricao"></ion-img>
 
 <div id="descri">
-  <h2>{{ Nome }} - {{ Whatsapp }}</h2>
-
+  <h2 id="linha-baixo">{{ Nome }} - {{ Whatsapp }}</h2>
 </div>
 
 <p id="descrever">
   {{Descricao}}
 </p>
 
+<!-- Videos -->
+<div id="divideos">
+    <iframe  width="100%" height="90%" src="https://player.vimeo.com/video/377774584" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 <!--  Tabela de informações   -->
+<h3>Detalhes</h3>
     <ion-grid id="tabela">
 <!--  idade   -->
         <ion-row>
-          <ion-col>
+          <ion-col >
             <div>
               Idade:
             </div>
@@ -54,7 +60,7 @@
           </ion-col>
         </ion-row>
 <!--  Altura   -->
-        <ion-row>
+        <ion-row id="linha">
             <ion-col>
               <div>
                 Altura:
@@ -68,7 +74,7 @@
             </ion-col>
           </ion-row>
 <!--  Peso   -->
-          <ion-row>
+          <ion-row id="linha">
               <ion-col>
                 <div>
                   Peso:
@@ -82,7 +88,7 @@
               </ion-col>
             </ion-row>
 <!--  Pes   -->
-            <ion-row>
+            <ion-row id="linha">
               <ion-col>
                 <div>
                   Pés:
@@ -96,7 +102,7 @@
               </ion-col>
             </ion-row>
 <!--  Manequim   -->
-              <ion-row>
+              <ion-row id="linha">
                 <ion-col>
                   <div>
                     Manequim:
@@ -110,7 +116,7 @@
                 </ion-col>
               </ion-row>
 <!--  Acompanha   -->
-              <ion-row>
+              <ion-row id="linha">
                 <ion-col>
                   <div>
                     Acompanha:
@@ -124,7 +130,7 @@
                 </ion-col>
               </ion-row>
 <!--  Atende local   -->
-              <ion-row>
+              <ion-row id="linha">
                   <ion-col>
                     <div>
                       Atende em:
@@ -138,7 +144,7 @@
                   </ion-col>
                 </ion-row>
 <!--  Whatsapp   -->
-                <ion-row>
+                <ion-row id="linha">
                     <ion-col>
                       <div>
                         Whatsapp:
@@ -152,7 +158,7 @@
                     </ion-col>
                   </ion-row>
 <!--  Horario Fun   -->
-                  <ion-row>
+                  <ion-row id="linha">
                       <ion-col>
                         <div>
                           Horário:
@@ -176,4 +182,82 @@
         </ion-card-content>
       </ion-item>
   -->
+
+<!-- Conteudo Perguntas e respotas -->
+<h3>Perguntas e respotas</h3>
+
+<ion-grid id="tabela">
+  <ion-row>
+    <ion-col>
+      <div>
+        {{ Pergunta1 }}
+      </div>
+    </ion-col>
+
+    <ion-col>
+      <div>
+        {{ Resposta1 }}
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row id="linha">
+      <ion-col>
+        <div>
+          {{ Pergunta2 }}
+        </div>
+      </ion-col>
+  
+      <ion-col>
+        <div>
+          {{ Resposta2 }}
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row id="linha">
+        <ion-col>
+          <div>
+            {{ Pergunta3 }}
+          </div>
+        </ion-col>
+    
+        <ion-col>
+          <div>
+            {{ Resposta3 }}
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row id="linha">
+          <ion-col>
+            <div>
+              {{ Pergunta4 }}
+            </div>
+          </ion-col>
+      
+          <ion-col>
+            <div>
+              {{ Resposta4 }}
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row id="linha">
+            <ion-col>
+              <div>
+                {{ Pergunta5 }}
+              </div>
+            </ion-col>
+        
+            <ion-col>
+              <div>
+                {{ Resposta5 }}
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+<br>
+<br>
+
 </ion-content>
