@@ -50,5 +50,16 @@ page-mostraracompanhante {
     .div {
         display:none;
     }
+    h3{
+        color: white;
+        padding-left: 5px;
+        font-size: 18px;
+    }
+    #linha{
+        border-top: 2px solid  #ef1551;
+    }
+    #linha-baixo{
+        border-bottom: 2px solid #ef1551;
+    }
 
 }
