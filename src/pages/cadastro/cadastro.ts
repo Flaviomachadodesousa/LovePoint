@@ -13,9 +13,7 @@ export class CadastroPage {
 
   public nome: string = '';
   public email: any = '';
-  public CPF: number;
   public data: string = new Date().toISOString();
-  public telefone: number ;
   public senha: any;
   public confsenha: any;
   
@@ -27,7 +25,7 @@ export class CadastroPage {
               public firebaseauth: AngularFireAuth) { }
 
     cadastrar() {
-      if (!this.nome || !this.email || !this.CPF || !this.telefone || !this.senha || !this.confsenha) {
+      if (!this.nome || !this.email || !this.senha || !this.confsenha) {
         this._alertCtrl.create({
           title: 'Preenchimento obrigatório',
           subTitle: 'Preencha todos os campos!',
@@ -37,7 +35,7 @@ export class CadastroPage {
         }).present(); 
         return    
       }
-      else if (this.senha !== this.confsenha){
+      else if (this.senha != this.confsenha ){
         this._alertCtrl.create({
           title: 'Senhas não conferem',
           subTitle: 'Confire sua senha!',
@@ -54,7 +52,7 @@ export class CadastroPage {
               subTitle: 'Efetue o login',
               buttons: [
                 { text: 'Ok',
-                handler: () => { this.navCtrl.setRoot(LoginPage)}
+                handler: () => { this.navCtrl.setRoot(LoginPage) }
                 }
               ]
         }).present()
