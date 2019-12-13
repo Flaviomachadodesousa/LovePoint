@@ -48,7 +48,10 @@ export class MostraracompanhantePage {
   Resposta4: any;
   Resposta5: any;
   Slide_um: any;
-  Slide_dois: any
+  Slide_dois: any;
+  Slide_tres: any;
+  Slide_quatro: any;
+  Slide_cinco: any;
 
   slideOpts = {
     initialSlide: 1,
@@ -87,8 +90,9 @@ export class MostraracompanhantePage {
               this.Resposta5 = navParams.get('Resposta5');
               this.Slide_um = navParams.get('Slide_um');
               this.Slide_dois = navParams.get('Slide_dois');
+              this.Slide_tres = navParams.get('Slide_tres');
+              this.Slide_quatro = navParams.get('Slide_quatro');
+              this.Slide_cinco = navParams.get('Slide_cinco');
             }
 
-             
-              
 }
