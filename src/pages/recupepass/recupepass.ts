@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { LoginPage } from '../login/login';
 
 
 @IonicPage()
@@ -23,14 +24,18 @@ export class RecupepassPage {
         title: 'Verifique seu E-mail',
         subTitle: 'E-mail de recuperação de senha enviado',
         buttons: [
-          { text: 'Ok' }
+          { text: 'Ok', 
+          handler: () => { this.navCtrl.setRoot(LoginPage) }
+          }
         ]
       }).present()
     }).catch(() => this._alertCtrl.create({
       title: 'Verifique seu E-mail',
               subTitle: 'E-mail incorretos! Verifique!',
               buttons: [
-                { text: 'Ok' }
+                { text: 'Ok', 
+                handler: () => { this.navCtrl.setRoot(LoginPage) }
+                }
               ]
     }).present()
     )
