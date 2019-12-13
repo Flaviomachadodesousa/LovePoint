@@ -8,7 +8,7 @@
     
   <ion-content padding>
     
-    <form (ngSubmit)="cadastrar()" #formulario="ngForm">
+    <form  (ngSubmit)="cadastrar()" #formulario="ngForm">
         <ion-item>
           <ion-label stacked>* Nome:</ion-label>
           <ion-input [(ngModel)]="nome" name="nome"></ion-input>
@@ -16,29 +16,27 @@
 
         <ion-item>
           <ion-label stacked>* E-mail:</ion-label>
-          <ion-input [(ngModel)]="email" name="email"></ion-input>
+          <ion-input [(ngModel)]="email" name="email" type="email"></ion-input>
         </ion-item>
-                
+
         <ion-item>
-          <ion-label stacked>* Data de Nascimento:</ion-label>
-          <ion-datetime [(ngModel)]="data" name="data" displayFormat="DD/MM/YY"></ion-datetime>
+            <ion-label stacked>*Confirme E-mail:</ion-label>
+            <ion-input [(ngModel)]="emailconfirme" name="emailconfirme" type="email"></ion-input>
         </ion-item>
         
         <ion-item>
           <ion-label stacked>* Senha</ion-label>
-          <ion-input [(ngModel)]="senha" name="senha" type="password" placeholder="Senha"></ion-input>
+          <ion-input [(ngModel)]="senha" name="senha" type="password"></ion-input>
         </ion-item>
 
         <ion-item>
-          <ion-label stacked type="password" placeholder="Password">* Confirmar Senha:</ion-label>
-          <ion-input [(ngModel)]="confsenha" name="confsenha" type="password" placeholder="Senha"></ion-input>
+          <ion-label stacked>* Confirmar Senha:</ion-label>
+          <ion-input [(ngModel)]="confsenha" name="confsenha" type="password" ></ion-input>
         </ion-item>
-        
+
         <ion-item>
-          <ion-label>
-            <h6>Concordo com os termos</h6>
-          </ion-label>
-          <ion-checkbox color="primary"></ion-checkbox>
+          <ion-label stacked>* Declaro ser maior de 18 anos</ion-label>
+          <ion-checkbox [(ngModel)]="checkado" name="cpcheckadof" color="primary" ></ion-checkbox>
         </ion-item>
         
         <div>
