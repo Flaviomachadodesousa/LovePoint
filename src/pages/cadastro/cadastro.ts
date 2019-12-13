@@ -3,7 +3,6 @@ import { IonicPage, NavController, NavParams, Platform, AlertController } from '
 import { AngularFireAuth } from 'angularfire2/auth';
 import { LoginPage } from './../login/login';
 
-
 @IonicPage()
 @Component({
   selector: 'page-cadastro',
@@ -12,20 +11,21 @@ import { LoginPage } from './../login/login';
 export class CadastroPage {
 
   public nome: string = '';
-  public email: any = '';
-  public data: string = new Date().toISOString();
+  public email: string = '';
+  public emailconfirme: string = '';
   public senha: any;
   public confsenha: any;
-  
+  public checkado: boolean;
 
+  
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               private _alertCtrl: AlertController,
               public platform: Platform,
-              public firebaseauth: AngularFireAuth) { }
+              public firebaseauth: AngularFireAuth) {  }
 
     cadastrar() {
-      if (!this.nome || !this.email || !this.senha || !this.confsenha) {
+      if (!this.nome || !this.email || !this.emailconfirme || !this.senha || !this.confsenha ) {
         this._alertCtrl.create({
           title: 'Preenchimento obrigatório',
           subTitle: 'Preencha todos os campos!',
@@ -35,6 +35,18 @@ export class CadastroPage {
         }).present(); 
         return    
       }
+
+      else if (this.email != this.emailconfirme ){
+        this._alertCtrl.create({
+          title: 'E-mail não conferem',
+          subTitle: 'Confire seu E-mail!',
+        buttons: [
+          { text: 'ok' }
+        ]
+        }).present();
+        return
+      }
+
       else if (this.senha != this.confsenha ){
         this._alertCtrl.create({
           title: 'Senhas não conferem',
@@ -45,10 +57,22 @@ export class CadastroPage {
         }).present();
         return
       }
+
+      else if (this.checkado != true ){
+        this._alertCtrl.create({
+          title: 'Confirme',
+          subTitle: 'Confirme sua idade!',
+        buttons: [
+          { text: 'ok' }
+        ]
+        }).present();
+        return
+      }
+
       else
         this.firebaseauth.auth.createUserWithEmailAndPassword(this.email,this.senha)
           this._alertCtrl.create({
-            title: 'Usuario Criado com sucesso',
+            title: 'Usuario criado com sucesso',
               subTitle: 'Efetue o login',
               buttons: [
                 { text: 'Ok',
