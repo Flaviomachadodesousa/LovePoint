@@ -68,6 +68,9 @@ export class AcompanhantesaopauloPage {
                 Resposta5: AUSER.Resposta5,
                 Slide_um: AUSER.Slide_um,
                 Slide_dois: AUSER.Slide_dois,
+                Slide_tres: AUSER.Slide_tres,
+                Slide_quatro: AUSER.Slide_quatro,
+                Slide_cinco: AUSER.Slide_cinco,
                 //console.log('USER ID É INGUAL A ='+AUSER.thumbnailUrl)
                 //console.log('USER ID É INGUAL A ='+AUSER.title)
               });
