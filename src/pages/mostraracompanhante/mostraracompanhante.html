@@ -11,7 +11,7 @@
     <h1>Whatsapp: {{Whatsapp}}</h1>
 
     <div>
-      <ion-slides id="slide">
+      <ion-slides #slides id="slide" pager="true" autoplay="3000" >
 
         <ion-slide id="sld">
           <img src="{{ Slide_um }}" id="slide">
@@ -32,9 +32,11 @@
         <ion-slide id="sld">
           <img src="{{ Slide_cinco }}" id="slide">
         </ion-slide>
+              
 
-          
       </ion-slides>
+
+      
   </div>
 
 <!--  Descrição   -->
