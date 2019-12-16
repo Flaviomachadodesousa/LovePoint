@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import { AcompanhantesProvider } from '../../providers/acompanhantes/acompanhantes';
 
@@ -17,6 +17,7 @@ import { AcompanhantesProvider } from '../../providers/acompanhantes/acompanhant
   templateUrl: 'mostraracompanhante.html',
 })
 export class MostraracompanhantePage {
+  @ViewChild(Slides) slides: Slides;
 
   options: any;
   public users: any;
@@ -53,10 +54,8 @@ export class MostraracompanhantePage {
   Slide_quatro: any;
   Slide_cinco: any;
 
-  slideOpts = {
-    initialSlide: 1,
-    speed: 400
-  };
+  
+
   
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
@@ -93,6 +92,8 @@ export class MostraracompanhantePage {
               this.Slide_tres = navParams.get('Slide_tres');
               this.Slide_quatro = navParams.get('Slide_quatro');
               this.Slide_cinco = navParams.get('Slide_cinco');
+
             }
+            
 
 }
