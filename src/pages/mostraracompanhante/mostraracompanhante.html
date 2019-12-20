@@ -6,9 +6,13 @@
 
 <ion-content fullscreen id="content">
   
-    <h1 id="name">Nome: {{Nome}}</h1>
-    <h1>Local: {{Local_Atende}}</h1>
-    <h1>Whatsapp: {{Whatsapp}}</h1>
+  
+      <h1>Nome: {{Nome}}</h1>
+
+      <h1>Local: {{Local_Atende}}</h1>
+
+      <h1><a href="https://api.whatsapp.com/send?phone=+55{{Whatsapp}}&text=Ola%20vi%20seu%20anuncio%20no%20App%20Acompanhate's">Whatsapp: {{Whatsapp}}</a></h1>
+   
 
     <div>
       <ion-slides #slides id="slide" pager="true" autoplay="3000" >
@@ -45,7 +49,7 @@
 <ion-img src="{{ Thumbnail_Descricao }}" id="imagem_descricao"></ion-img>
 
 <div id="descri">
-  <h2 id="linha-baixo">{{ Nome }} - {{ Whatsapp }}</h2>
+  <h2 id="linha-baixo">{{ Nome }} - <a href="https://api.whatsapp.com/send?phone=+55{{Whatsapp}}&text=Ola%20vi%20seu%20anuncio%20no%20App%20Acompanhate's"> {{ Whatsapp }}</a></h2>
 </div>
 
 <p id="descrever">
