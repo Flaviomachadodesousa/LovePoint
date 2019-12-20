@@ -22,6 +22,8 @@ export class Acompanhants {
 
   //pages: Array<{title: string, component: any}>;
     pages = [
+          { titulo: 'Perfil', componente: CompartilharPage, icone: 'share' }
+          ,
           { titulo: 'Novidades', componente: NovidadesPage, icone: 'star' }
           ,
           { titulo: 'Recomendar o App', componente: CompartilharPage, icone: 'share' }
