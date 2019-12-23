@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { Acompanhants } from './app.component';
 import { Geolocation } from '@ionic-native/geolocation';
+import { PerfilPage } from '../pages/perfil/perfil';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { ContactPage } from '../pages/acompanhante/contact';
@@ -68,6 +69,7 @@ const config_firebase = {
 
 @NgModule({
   declarations: [
+    PerfilPage,
     Acompanhants,
     IntroPage,
     LoginPage,
@@ -100,6 +102,7 @@ const config_firebase = {
   ],
   bootstrap: [IonicApp],
   entryComponents: [
+    PerfilPage,
     Acompanhants,
     LoginPage,
     TabsPage,
