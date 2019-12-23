@@ -18,10 +18,10 @@ export class ContactPage {
   public users: any;
   loading: any;
 
-  items = [
-    { titulo: 'titulo' },
-    { titulo: 'titulo2' }
-  ]
+  //items = [
+  //  { titulo: 'titulo' },
+  //  { titulo: 'titulo2' }
+  //]
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
@@ -30,27 +30,27 @@ export class ContactPage {
               public loadingCtrl: LoadingController) { }
             
           saopaulo(){
-            this.navCtrl.push(AcompanhantesaopauloPage);
+            this.navCtrl.setRoot(AcompanhantesaopauloPage);
           };
 
           riodejaneiro(){
-            this.navCtrl.push(AcompanhanteriodejaneiroPage);
+            this.navCtrl.setRoot(AcompanhanteriodejaneiroPage);
           };
 
           minasgerais(){
-            this.navCtrl.push(AcompanhanteminasgeraisPage);
+            this.navCtrl.setRoot(AcompanhanteminasgeraisPage);
           };
 
           bahia(){
-            this.navCtrl.push(AcompanhantebahiaPage);
+            this.navCtrl.setRoot(AcompanhantebahiaPage);
           };
 
           riograndedosul(){
-            this.navCtrl.push(AcompanhanteriograndedosulPage);
+            this.navCtrl.setRoot(AcompanhanteriograndedosulPage);
           };
 
           parana(){
-            this.navCtrl.push(AcompanhanteparanaPage);
+            this.navCtrl.setRoot(AcompanhanteparanaPage);
           };
 
         }
