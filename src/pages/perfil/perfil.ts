@@ -1,10 +1,9 @@
+import { userfirebase } from './../../modelos/userfirebase';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, normalizeURL } from 'ionic-angular';
 import { UsuariosServiceProvider } from '../../providers/usuarios-service/usuarios-service';
 import { Camera } from '@ionic-native/camera/ngx';
 import { AngularFireAuth } from 'angularfire2/auth';
-
-
 
 @IonicPage()
 @Component({
@@ -12,7 +11,8 @@ import { AngularFireAuth } from 'angularfire2/auth';
   templateUrl: 'perfil.html',
 })
 export class PerfilPage {
-
+  
+ 
 
   constructor(
     public navCtrl: NavController,
@@ -24,17 +24,14 @@ export class PerfilPage {
       this.afAuth.auth.onAuthStateChanged(user => {
         if (user) {
           console.log(user.email)
-          console.log(user.photoURL)
+          
         }
         else {
           // not logged in
         }
-  })
+      })
     
     }
-
-
-
 
   tiraFoto(){
     this._camera.getPicture({
