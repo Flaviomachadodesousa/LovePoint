@@ -10,6 +10,7 @@ import { LoginPage } from '../pages/login/login';
 import { CompartilharPage } from '../pages/compartilhar/compartilhar';
 import { TermosPage } from '../pages/termos/termos';
 import { NovidadesPage } from '../pages/novidades/novidades';
+import { PerfilPage } from '../pages/perfil/perfil';
 
 @Component({
   selector: 'Acompanhants',
@@ -22,7 +23,7 @@ export class Acompanhants {
 
   //pages: Array<{title: string, component: any}>;
     pages = [
-          { titulo: 'Perfil', componente: CompartilharPage, icone: 'share' }
+          { titulo: 'Perfil', componente: PerfilPage, icone: 'person' }
           ,
           { titulo: 'Novidades', componente: NovidadesPage, icone: 'star' }
           ,
