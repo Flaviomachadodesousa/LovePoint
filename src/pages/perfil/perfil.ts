@@ -1,4 +1,3 @@
-import { userfirebase } from './../../modelos/userfirebase';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, normalizeURL } from 'ionic-angular';
 import { UsuariosServiceProvider } from '../../providers/usuarios-service/usuarios-service';
@@ -12,7 +11,9 @@ import { AngularFireAuth } from 'angularfire2/auth';
 })
 export class PerfilPage {
   
+user:any;
  
+
 
   constructor(
     public navCtrl: NavController,
@@ -24,12 +25,12 @@ export class PerfilPage {
       this.afAuth.auth.onAuthStateChanged(user => {
         if (user) {
           console.log(user.email)
-          
         }
         else {
           // not logged in
         }
       })
+
     
     }
 
@@ -48,10 +49,12 @@ export class PerfilPage {
   get avatar(){
     return this._usuariosService.ObtemAvatar();
   }
-    
+  
+  
   get usuarioLogado() {
     return this._usuariosService.obtemUsuarioLogado();
   }
+ 
 
 
 
