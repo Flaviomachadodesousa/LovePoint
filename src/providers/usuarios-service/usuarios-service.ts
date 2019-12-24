@@ -10,10 +10,13 @@ const CHAVE = 'avatar-usuario';
 export class UsuariosServiceProvider {
     email=''
     senha=''
+    user: any;
+    
 
     private _usuarioLogado: Usuario;
 
-    constructor(private _http: HttpClient,
+    constructor(
+      //private _http: HttpClient,
       public afAuth: AngularFireAuth){
 
     }
@@ -24,8 +27,15 @@ export class UsuariosServiceProvider {
     }
 
     obtemUsuarioLogado() {
-      return this._usuarioLogado;
-    }
+      /*this.afAuth.auth.onAuthStateChanged(user => {
+        if (user) {
+          console.log(user.email)
+        }
+        else {
+          // not logged in
+        }
+      })*/
+    } 
 
     salvaAvatar(avatar){
       localStorage.setItem(CHAVE, avatar);
