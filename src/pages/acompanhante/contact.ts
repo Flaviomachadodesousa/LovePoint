@@ -30,27 +30,27 @@ export class ContactPage {
               public loadingCtrl: LoadingController) { }
             
           saopaulo(){
-            this.navCtrl.setRoot(AcompanhantesaopauloPage);
+            this.navCtrl.push(AcompanhantesaopauloPage);
           };
 
           riodejaneiro(){
-            this.navCtrl.setRoot(AcompanhanteriodejaneiroPage);
+            this.navCtrl.push(AcompanhanteriodejaneiroPage);
           };
 
           minasgerais(){
-            this.navCtrl.setRoot(AcompanhanteminasgeraisPage);
+            this.navCtrl.push(AcompanhanteminasgeraisPage);
           };
 
           bahia(){
-            this.navCtrl.setRoot(AcompanhantebahiaPage);
+            this.navCtrl.push(AcompanhantebahiaPage);
           };
 
           riograndedosul(){
-            this.navCtrl.setRoot(AcompanhanteriograndedosulPage);
+            this.navCtrl.push(AcompanhanteriograndedosulPage);
           };
 
           parana(){
-            this.navCtrl.setRoot(AcompanhanteparanaPage);
+            this.navCtrl.push(AcompanhanteparanaPage);
           };
 
         }
