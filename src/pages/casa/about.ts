@@ -1,9 +1,11 @@
+import MostrarCasaPage from './../mostrar-casa/mostrar-casa';
 import { Component , ViewChild,ElementRef, } from '@angular/core';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Platform } from 'ionic-angular';
 import { NavController, Nav } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
+
 
 declare var google;
 
@@ -13,9 +15,10 @@ declare var google;
 })
 export class AboutPage {
 
+  casa:any
+
   @ViewChild('map') mapElement: ElementRef;
   map: any;
-  //local_json = 'assets/data/markers.json';
   local_json = 'https://acompanhantes-59869.firebaseio.com/casa_noturna.json';
 
   
@@ -160,5 +163,15 @@ obtlocal(){
     console.log(erro);
   }); 
   }
+
+  detalhes(CASA){
+    this.navCtrl.push(MostrarCasaPage, {
+     id : CASA.id ,
+     name : CASA.name
+   });
+    //console.log('USER ID É INGUAL A ='+AUSER.thumbnailUrl)
+    //console.log('USER ID É INGUAL A ='+AUSER.title)
+ }
+
 
 }
