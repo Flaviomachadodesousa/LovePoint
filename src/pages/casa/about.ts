@@ -99,15 +99,36 @@ for(let marker of markers){
     });
 
     let infowindow = new google.maps.InfoWindow({
+      maxWidth: 228,
       content: _content,
-      maxWidth: 228
     }); 
 
-    marker.addListener('click', function() {
-      infowindow.open(this.map,marker);
-      });
-    } 
+    // The InfoWindow for the street view
+  let streetViewPanoramaInfoWindow = new google.maps.InfoWindow({
+    content: "bar",
+    position: _position, // refer to step #2
+    disableAutoPan: true // optional but helpful
+  });
+
+    //marker.addListener('click', function() {
+    //  this.streetViewPanorama = this.map.getStreetView();
+    //  infowindow.open(this.map, marker);
+    //  });
+      
+      marker.addListener('click', function() {
+        var streetViewPanorama = this.map.getStreetView();
+    
+        // when streetview was engaged
+        if(streetViewPanorama.getVisible()==true) {
+            streetViewPanoramaInfoWindow.open(streetViewPanorama); // refer to step #3
+        }
+        // when normal aerial view was engaged
+        else {
+          infowindow.open(this.map); // refer to step #3
+        }
+    });
   }
+}
 
 obtlocal(){
   this.geolocation.getCurrentPosition().then((position) => {
@@ -163,6 +184,8 @@ obtlocal(){
     console.log(erro);
   }); 
   }
+
+  
 
   detalhes(CASA){
     this.navCtrl.push(MostrarCasaPage, {
