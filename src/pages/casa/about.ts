@@ -1,4 +1,3 @@
-import MostrarCasaPage from './../mostrar-casa/mostrar-casa';
 import { Component , ViewChild,ElementRef, } from '@angular/core';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Platform } from 'ionic-angular';
@@ -103,37 +102,20 @@ for(let marker of markers){
       content: _content,
     }); 
 
-    // The InfoWindow for the street view
-  let streetViewPanoramaInfoWindow = new google.maps.InfoWindow({
-    content: "bar",
-    position: _position, // refer to step #2
-    disableAutoPan: true // optional but helpful
-  });
 
-    //marker.addListener('click', function() {
-    //  this.streetViewPanorama = this.map.getStreetView();
-    //  infowindow.open(this.map, marker);
-    //  });
-      
-      marker.addListener('click', function() {
-        var streetViewPanorama = this.map.getStreetView();
+    marker.addListener('click', function() {
+      this.streetViewPanorama = this.map.getStreetView();
+      infowindow.open(this.map, marker);
+      });
     
-        // when streetview was engaged
-        if(streetViewPanorama.getVisible()==true) {
-            streetViewPanoramaInfoWindow.open(streetViewPanorama); // refer to step #3
-        }
-        // when normal aerial view was engaged
-        else {
-          infowindow.open(this.map); // refer to step #3
-        }
-    });
+
   }
 }
 
 obtlocal(){
   this.geolocation.getCurrentPosition().then((position) => {
     let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
- 
+
     let mapOptions = {
       center:latLng,
       zoom:15,
@@ -183,18 +165,18 @@ obtlocal(){
   }, (erro) => {
     console.log(erro);
   }); 
-  }
+}
 
   
 
-  detalhes(CASA){
-    this.navCtrl.push(MostrarCasaPage, {
-     id : CASA.id ,
-     name : CASA.name
-   });
+  //detalhes(CASA){
+  //  this.navCtrl.push(MostrarCasaPage, {
+  //   id : CASA.id ,
+  //   name : CASA.name
+  // });
     //console.log('USER ID É INGUAL A ='+AUSER.thumbnailUrl)
     //console.log('USER ID É INGUAL A ='+AUSER.title)
- }
+ //}
 
 
 }
