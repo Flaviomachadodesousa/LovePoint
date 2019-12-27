@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
-import { Usuario } from "../../modelos/usuario";
+//import { HttpClient } from "@angular/common/http";
+//import { Usuario } from "../../modelos/usuario";
 import { AngularFireAuth } from "angularfire2/auth";
 
 const CHAVE = 'avatar-usuario';
@@ -13,7 +13,7 @@ export class UsuariosServiceProvider {
     user: any;
     
 
-    private _usuarioLogado: Usuario;
+    //private _usuarioLogado: Usuario;
 
     constructor(
       //private _http: HttpClient,
