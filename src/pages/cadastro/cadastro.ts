@@ -10,19 +10,18 @@ import { LoginPage } from './../login/login';
 })
 export class CadastroPage {
 
-  public nome: string = '';
-  public email: string = '';
-  public emailconfirme: string = '';
+  public nome: string;
+  public email: string;
+  public emailconfirme: string;
   public senha: any;
   public confsenha: any;
   public checkado: boolean;
 
-  
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               private _alertCtrl: AlertController,
               public platform: Platform,
-              public firebaseauth: AngularFireAuth) {  }
+              public firebaseauth: AngularFireAuth) { }
 
     cadastrar() {
       if (!this.nome || !this.email || !this.emailconfirme || !this.senha || !this.confsenha ) {
