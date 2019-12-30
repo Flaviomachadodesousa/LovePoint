@@ -23,45 +23,44 @@ export class MostraracompanhantePage {
   public users: any;
   loading: any;
 
-  Id :any;
-  Nome : any;
-  Local_Atende : any;
-  Whatsapp : any;
-  Thumbnail_Inicial: any;
-  Thumbnail_Descricao: any;
-  Idade: any;
+  Id : number;
+  Nome : string;
+  Local_Atende : string;
+  Whatsapp : number;
+  Thumbnail_Inicial: string;
+  Thumbnail_Descricao: string;
+  Idade: number;
   Altura: any;
-  Peso: any;
-  Pes: any;
-  Manequim: any;
-  Acompanha: any;
-  Atende: any;
-  Horario: any;
-  Descricao: any;
-  Pergunta1: any;
-  Pergunta2: any;
-  Pergunta3: any;
-  Pergunta4: any;
-  Pergunta5: any;
-  Resposta1: any;
-  Resposta2: any;
-  Resposta3: any;
-  Resposta4: any;
-  Resposta5: any;
-  Slide_um: any;
-  Slide_dois: any;
-  Slide_tres: any;
-  Slide_quatro: any;
-  Slide_cinco: any;
+  Peso: number;
+  Pes: number;
+  Manequim: number;
+  Acompanha: string;
+  Atende: string;
+  Horario: string;
+  Descricao: string;
+  Pergunta1: string;
+  Pergunta2: string;
+  Pergunta3: string;
+  Pergunta4: string;
+  Pergunta5: string;
+  Resposta1: string;
+  Resposta2: string;
+  Resposta3: string;
+  Resposta4: string;
+  Resposta5: string;
+  Slide_um: string;
+  Slide_dois: string;
+  Slide_tres: string;
+  Slide_quatro: string;
+  Slide_cinco: string;
 
-  
 
-  
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public http: HttpClient,
-              public Acompanhantes: AcompanhantesProvider) {
+              public Acompanhantes: AcompanhantesProvider) 
 
+              {
               this.Id = navParams.get('Id');
               this.Nome = navParams.get('Nome');
               this.Local_Atende = navParams.get('Local_Atende');
@@ -92,8 +91,5 @@ export class MostraracompanhantePage {
               this.Slide_tres = navParams.get('Slide_tres');
               this.Slide_quatro = navParams.get('Slide_quatro');
               this.Slide_cinco = navParams.get('Slide_cinco');
-
             }
-            
-
 }
