@@ -4,7 +4,7 @@ import { AcompanhantebahiaPage } from './../acompanhantebahia/acompanhantebahia'
 import { AcompanhanteminasgeraisPage } from './../acompanhanteminasgerais/acompanhanteminasgerais';
 import { AcompanhanteriodejaneiroPage } from './../acompanhanteriodejaneiro/acompanhanteriodejaneiro';
 import { AcompanhantesaopauloPage } from './../acompanhantesaopaulo/acompanhantesaopaulo';
-import { NavController, NavParams, LoadingController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { AcompanhantesProvider } from '../../providers/acompanhantes/acompanhantes';
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -13,21 +13,14 @@ import { HttpClient } from '@angular/common/http';
   selector: 'page-contact',
   templateUrl: 'contact.html'
 })
-export class ContactPage {
-  public feeds: Array<string>;
-  public users: any;
-  loading: any;
 
-  //items = [
-  //  { titulo: 'titulo' },
-  //  { titulo: 'titulo2' }
-  //]
+export class ContactPage {
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public http: HttpClient,
-              public _AcompanhantesProvider: AcompanhantesProvider,
-              public loadingCtrl: LoadingController) { }
+              public _AcompanhantesProvider: AcompanhantesProvider
+              ) { }
             
           saopaulo(){
             this.navCtrl.push(AcompanhantesaopauloPage);
