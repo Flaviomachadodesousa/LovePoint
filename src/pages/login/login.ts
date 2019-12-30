@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
-import 'rxjs-compat';
 import { AngularFireAuth } from 'angularfire2/auth';
+import 'rxjs-compat';
 import { TabsPage } from './../tabs/tabs';
 import { CadastroPage } from '../cadastro/cadastro';
 import { RecupepassPage } from './../recupepass/recupepass';
@@ -13,11 +13,11 @@ import { RecupepassPage } from './../recupepass/recupepass';
 })
 
 export class LoginPage {
-  usuario: any;
-  email: string = 'flavio@adamos.com.br';
-  senha: string = '1qaz2wsx';
+  email: string;
+  senha: string;
 
-  constructor(public navCtrl: NavController,
+  constructor(
+    public navCtrl: NavController,
     public navParams: NavParams,
     public afAuth: AngularFireAuth,
     private _alertCtrl: AlertController,
@@ -25,6 +25,15 @@ export class LoginPage {
   }
 
   fazerloginfire(){
+    if(!this.email || !this.senha){
+      this._alertCtrl.create({
+        title: 'Preenchimento obrigatório',
+        subTitle: 'Preencha todos os campos!',
+      buttons: [
+        { text: 'ok' }
+      ]
+      }).present(); 
+    }else{
     this.afAuth.auth.signInWithEmailAndPassword(this.email, this.senha)
     .then(() => {
       this.navCtrl.setRoot(TabsPage);
@@ -37,8 +46,8 @@ export class LoginPage {
               ]
     }).present()
     )
-  }
-
+}
+}
   avancaCadastro() {
       this.navCtrl.push(CadastroPage);
     }
@@ -46,6 +55,5 @@ export class LoginPage {
   avancarrecuperapassword(){
       this.navCtrl.push(RecupepassPage);
     }
-
 
  }
