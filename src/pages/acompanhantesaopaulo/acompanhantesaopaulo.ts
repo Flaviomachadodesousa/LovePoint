@@ -12,7 +12,7 @@ import { AcompanhantesProvider } from '../../providers/acompanhantes/acompanhant
 })
 export class AcompanhantesaopauloPage {
 
-  public users: any;
+  users: any;
   loading: any;
 
   constructor(public navCtrl: NavController,
@@ -25,10 +25,11 @@ export class AcompanhantesaopauloPage {
 
                 this.loading = this.loadingCtrl.create({
                   content: "Carregando..." });
+
                 this.loading.present();
-                setInterval(() => {
-                this.loading.dismissAll();
-                }, 1000);
+                  setInterval(() => {
+                    this.loading.dismissAll();
+                  }, 3000);
             }
             
             getsaopaulo() {
