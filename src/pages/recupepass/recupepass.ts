@@ -10,9 +10,11 @@ import { LoginPage } from '../login/login';
   templateUrl: 'recupepass.html',
 })
 export class RecupepassPage {
-  email: string = '';
+  email: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
     public afAuth: AngularFireAuth,
     private _alertCtrl: AlertController,
     ) {}
@@ -31,7 +33,7 @@ export class RecupepassPage {
       }).present()
     }).catch(() => this._alertCtrl.create({
       title: 'Verifique seu E-mail',
-              subTitle: 'E-mail incorretos! Verifique!',
+              subTitle: 'E-mail incorretos verifique!',
               buttons: [
                 { text: 'Ok', 
                 handler: () => { this.navCtrl.setRoot(LoginPage) }
