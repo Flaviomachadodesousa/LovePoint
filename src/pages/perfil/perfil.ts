@@ -10,11 +10,9 @@ import { AngularFireAuth } from 'angularfire2/auth';
   templateUrl: 'perfil.html',
 })
 export class PerfilPage {
+   
+  profile:any;
   
-user:any;
- 
-
-
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -22,17 +20,22 @@ user:any;
     public afAuth: AngularFireAuth,
     private _camera: Camera) {
 
-      this.afAuth.auth.onAuthStateChanged(user => {
-        if (user) {
-          console.log(user.email)
-        }
-        else {
-          // not logged in
-        }
-      })
+    let user = afAuth.auth.currentUser;
 
-    
+      if (user != null) {
+          user.providerData.forEach(function (profile) {
+            //console.log("  Sign-in provider: " + profile.providerId);
+            console.log("  Provider-specific UID: " + profile.uid);
+            //console.log("  Name: " + profile.displayName);
+            console.log("  Email: " + profile.email);
+            //console.log("  Photo URL: " + profile.photoURL);
+            return
+          });
+        }else{
+          console.log("   ELSE  ");          
+        }
     }
+        
 
   tiraFoto(){
     this._camera.getPicture({
