@@ -180,7 +180,7 @@ input:-webkit-autofill:focus {
 }
 
 .gray-bg {
-    background-color: #f2fefe;
+    background-color: #fcfcfc;
 }
 
 /**
@@ -203,11 +203,11 @@ input:-webkit-autofill:focus {
 .button.white,
 .button:hover {
     background-color: #ffffff;
-    color: #138fc2;
+    color: #ef1551;
 }
 
 .button.white:hover {
-    background-color: #2f60c3;
+    background-color: #ef1551;
     color: #ffffff;
 }
 
