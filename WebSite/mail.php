@@ -1,20 +1,14 @@
 <?php
 
-#Receive user input
-if(isset($_POST['submit'])){
-	$_name = $_POST['name'];
-	$_email = $_POST['email'];
-	$_telefone = $_POST['telefone'];
-	$_mensagem = $_POST['mensagem'];
+// The message
+$_name = $_POST['name'];
+$_email = $_POST['email'];
+$_telefone = $_POST['tel'];
+$_mensagem = $_POST['msg'];
 
-#Send email
-	$from = "flavio.sos.machado@gmail.com";
-	$to = "flavio@adamos.com.br";
-	$subject = "Site Acompanhants";
-	$headers = "De:". $from;
+$email_telefone = " Nome: " . $_name . "\n Email: " . $_email . "\n Telefone: " . $_telefone . "\n";
 
-	mail($to, $subject, $_name, $_email, $_telefone, $_mensagem, $headers);
+// Send
+mail('flavio.sos.machado@gmail.com' ,'Site Acompanhats' , $email_telefone . " Mensagem: " . $_mensagem);
 
-	echo "A mensagem de e-mail foi enviada.";
-}
 ?>
