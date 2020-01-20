@@ -56,6 +56,9 @@ import { AcompanhanteparanaPage } from '../pages/acompanhanteparana/acompanhante
 //MOSTRAR
 import { MostraracompanhantePage } from '../pages/mostraracompanhante/mostraracompanhante';
 
+//PAGINA INDISPONIVEL
+import { IndisponivelPage } from '../pages/indisponivel/indisponivel';
+
 
 
 const config_firebase = {
@@ -90,6 +93,7 @@ const config_firebase = {
     AcompanhanteriograndedosulPage,
     AcompanhanteparanaPage,
     MostraracompanhantePage,
+    IndisponivelPage,
 
   ],
   imports: [
@@ -123,7 +127,7 @@ const config_firebase = {
     AcompanhanteriograndedosulPage,
     AcompanhanteparanaPage,
     MostraracompanhantePage,
-
+    IndisponivelPage,
   ],
   providers: [
     StatusBar,
@@ -142,7 +146,7 @@ const config_firebase = {
     HttpClientModule,
     Geolocation,
     AcompanhantesProvider,
-
+    IndisponivelPage,
   ]
 })
 export class AppModule {}
