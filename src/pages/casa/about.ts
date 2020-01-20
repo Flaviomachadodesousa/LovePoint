@@ -5,7 +5,6 @@ import { NavController, Nav } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
 
-
 declare var google;
 
 @Component({
@@ -19,7 +18,6 @@ export class AboutPage {
   @ViewChild('map') mapElement: ElementRef;
   map: any;
   local_json = 'https://acompanhantes-59869.firebaseio.com/casa_noturna.json';
-
   
   constructor(public navCtrl: NavController,
               public http: HttpClient,
@@ -27,6 +25,7 @@ export class AboutPage {
               public plt: Platform,
               public nav: Nav) { }
 
+              
 ionViewDidLoad(){
   this.displayGoogleMap();
   this.getMarkers();
@@ -102,13 +101,11 @@ for(let marker of markers){
       content: _content,
     }); 
 
-
     marker.addListener('click', function() {
       this.streetViewPanorama = this.map.getStreetView();
       infowindow.open(this.map, marker);
       });
     
-
   }
 }
 
