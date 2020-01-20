@@ -6,8 +6,6 @@ import { Injectable } from '@angular/core';
 export class AcompanhantesProvider {
 
   public items: any;
-  url = "https://jsonplaceholder.typicode.com/photos";
-  urlflavio = "https://api.myjson.com/bins/10qu78";
   urlsp = "https://acompanhantes-59869.firebaseio.com/Acompanhantes_SP.json";
 
   constructor(public http: HttpClient) {
